@@ -1,0 +1,12 @@
+import streamlit as st
+import pandas as pd
+
+st.title("SF Airbnb Explorer")
+
+df = pd.read_csv("listings.csv")
+
+st.map(df)import streamlit as st
+import pandas as pd
+st.title('SF Real Estate & Airbnb Price Explorer')
+df = pd.read_csv('listings.csv')
+st.write(df.head())
